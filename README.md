@@ -3,6 +3,7 @@ google collab docs to generate images using Kandinsky2.1 model
 
 
 Using this code to create permutations of images and to save json files. 
+```
 
 import os
 import itertools
@@ -58,4 +59,4 @@ for character_path, environment_path in itertools.product(characters, environmen
         with open(json_save_path, 'w') as json_file:
             json.dump(json_data, json_file)
 
-            torch.cuda.empty_cache()
+            torch.cuda.empty_cache()```
